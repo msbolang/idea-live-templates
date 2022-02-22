@@ -178,11 +178,11 @@ title可加可不加
 二级无序列表内容
 一级无序列表内容
 
-​ 1.二级有序列表内容
+ 1.二级有序列表内容
 
-​ 2.二级有序列表内容
+ 2.二级有序列表内容
 
-​ 3.二级有序列表内容
+ 3.二级有序列表内容
 
 1.一级有序列表内容
 
@@ -191,11 +191,11 @@ title可加可不加
 二级无序列表内容
 2.一级有序列表内容
 
-​ 1.二级有序列表内容
+ 1.二级有序列表内容
 
-​ 2.二级有序列表内容
+ 2.二级有序列表内容
 
-​ 3.二级有序列表内容
+ 3.二级有序列表内容
 
 八.表格
 语法：
@@ -232,7 +232,7 @@ ID	等级	昵称	攻防
 `代码内容`
 代码块：代码块开头与结尾分别使用三个反引号包括起来，且反引号单独占一行
 
-​```
+```
 代码...
 代码...
 代码...
@@ -244,7 +244,7 @@ ID	等级	昵称	攻防
 `my hexo bolg is "htttp://fcitx.top" `
 代码块：
 
-​```
+```
 Welcome my bolg！
 My friend ！
 Hello ！
@@ -292,7 +292,7 @@ cond(no)->sub1(right)->op1  #no的时候到到 sub1，再从sub1的右侧到op1
 #还可以这样 cond1(no,right)
 示例：
 
-​```flow
+```flow
 st=>start: 开始
 op=>operation: My Operation
 cond=>condition: Yes or No?
@@ -318,3 +318,20 @@ cond(yes)->io->e
 cond(no)->sub1(right)->op1
 效果如下：
 流程图Two
+
+
+
+```go
+st=>start: Start:>http://www.google.com[blank]
+e=>end:>http://www.google.com
+op1=>operation: My Operation
+sub1=>subroutine: My Subroutine
+cond=>condition: Yes
+or No?:>http://www.google.com
+io=>inputoutput: catch something...
+
+st->op1->cond
+cond(yes)->io->e
+cond(no)->sub1(right)->op1
+```
+
